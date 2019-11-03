@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 40px;
   margin: 20px;
 }
 
@@ -22,15 +24,15 @@ ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 50px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 50px;
 }
 
 .square:focus {
@@ -46,6 +48,29 @@ ul {
   flex-direction: row;
 }
 
-.game-info {
-  margin-left: 20px;
+#O {
+  font-family: "Fredoka One", sans-serif;
+  background: -webkit-linear-gradient(#f8c7a4, #ee7a79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#X {
+  font-family: "Fredoka One", sans-serif;
+  background: -webkit-linear-gradient(#a4d5e9, #a39ddd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restart {
+  background: -webkit-linear-gradient(#a4d5e9, #a39ddd);
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-family: "Fredoka One", sans-serif;
+  cursor: pointer;
+}
+
+.App {
+  margin: auto;
+  padding: auto;
 }
