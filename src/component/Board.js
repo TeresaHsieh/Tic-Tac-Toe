@@ -100,11 +100,11 @@ const Board = () => {
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Winner : " + winner;
   } else if (isBoardFull(squares)) {
     status = "Tie ";
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = "Next player :  " + (xIsNext ? "X" : "O");
   }
   useEffect(() => {
     if (winner) {
@@ -119,7 +119,7 @@ const Board = () => {
       <div>
         {mask ? (
           <div className="mask">
-            {status}
+            <div className="result"> {status}</div>
             <button
               className="restart"
               onClick={() => {
@@ -133,7 +133,7 @@ const Board = () => {
           </div>
         ) : null}{" "}
       </div>
-      <div className="status">{status}</div>
+      <div className="status">{mask ? null : status}</div>
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}

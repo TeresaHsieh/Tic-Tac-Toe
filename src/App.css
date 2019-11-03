@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap");
+
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Caveat Brush", sans-serif;
   font-size: 18px;
   font-weight: bold;
   margin: 20px;
+  background-color: rgb(26, 27, 72);
 }
 
 .board-row:after {
@@ -14,23 +17,25 @@ body {
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: rgb(26, 27, 72);
+  border: 2.5px solid white;
   float: left;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 34px;
-  height: 50px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 50px;
+  width: 100px;
   cursor: pointer;
 }
 
@@ -48,52 +53,67 @@ body {
 }
 
 #O {
-  font-family: "Fredoka One", sans-serif;
+  font-family: "Caveat Brush", sans-serif;
   background: -webkit-linear-gradient(#f8c7a4, #ee7a79);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 #X {
-  font-family: "Fredoka One", sans-serif;
-  background: -webkit-linear-gradient(#a4d5e9, #a39ddd);
+  font-family: "Caveat Brush", sans-serif;
+  background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* color: rgb(106, 204, 218); */
 }
 
 .restart {
-  background: -webkit-linear-gradient(#a4d5e9, #a39ddd);
+  background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd);
   border-radius: 30px;
   padding: 10px 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Caveat Brush", sans-serif;
   cursor: pointer;
   position: absolute;
   font-weight: bold;
   top: 50%;
-  left: 50%;
+  left: 25%;
+  font-size: 30px;
+  margin-top: 30px;
+  color: white;
+  letter-spacing: 3px;
 }
 
 .title {
   margin: auto;
   text-align: center;
+  font-size: 60px;
+  color: white;
 }
 
 .game-board {
   margin: auto;
+  position: relative;
 }
 
 .mask {
   background: rgb(248, 199, 164);
   background: linear-gradient(
     312deg,
-    rgba(248, 199, 164, 0.17550770308123254) 0%,
-    rgba(238, 122, 121, 0.17550770308123254) 100%
+    rgba(248, 199, 164, 0.9) 0%,
+    rgba(238, 123, 121, 0.9) 100%
   );
-  position: fixed;
+  position: absolute;
   width: 500px;
   height: 300px;
   border-radius: 30px;
   padding: 20px;
-  /* margin-top: calc(50vh - 300px / 2);
-  margin-left: calc(50vw - 500px / 2); */
+  top: 80px;
+  left: -120px;
+}
+
+.result {
+  margin: auto;
+  text-align: center;
+  font-size: 100px;
+  color: white;
 }
