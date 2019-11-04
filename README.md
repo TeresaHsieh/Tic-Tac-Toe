@@ -10,4 +10,3 @@ Get started: https://tic-tac-toe-3afcb.firebaseapp.com
 
 - React(function component)
 - Firebase - Hosting
-- RWD
