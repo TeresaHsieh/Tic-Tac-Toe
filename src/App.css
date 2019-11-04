@@ -90,11 +90,9 @@ body {
   background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* color: rgb(106, 204, 218); */
 }
 
 .restart {
-  /* background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd); */
   border-radius: 30px;
   padding: 10px 15px;
   font-family: "Caveat Brush", sans-serif;
