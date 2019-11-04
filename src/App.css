@@ -1,6 +1,32 @@
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap");
+
+/* Common CSS */
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0px;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Noto Sans TC", "微軟正黑體", "新細明體", arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+img {
+  vertical-align: middle;
+}
+
+/* Other CSS */
 
 body {
   font-family: "Caveat Brush", sans-serif;
@@ -68,7 +94,7 @@ body {
 }
 
 .restart {
-  background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd);
+  /* background: -webkit-linear-gradient(rgb(126, 223, 238), #a39ddd); */
   border-radius: 30px;
   padding: 10px 15px;
   font-family: "Caveat Brush", sans-serif;
@@ -81,6 +107,7 @@ body {
   margin-top: 30px;
   color: white;
   letter-spacing: 3px;
+  background-color: rgb(72, 73, 168);
 }
 
 .title {

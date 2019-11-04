@@ -1,32 +1,13 @@
-export const updateSquares = squaresStatus => {
+export const updateSquares = Squares => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
-    console.log(squaresStatus);
-    // const firestore = getFirestore();
-    // firestore
-    //   .collection("RepoSearchHistory")
-    //   .add({})
-    //   .then(() => {
-    // dispatch({ type: "SAVE_HISTORY", history });
-    //   })
-    //   .catch(err => {
-    //     dispatch({ type: "SAVE_HISTORY_ERROR", err });
-    //   });
+    dispatch({ type: "UPDATE_STATUS", Squares });
   };
 };
 
-export const restartStatus = () => {
+export const restartStatus = originStatus => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
-    console.log("進入 action");
+    console.log("reset status 進入 action");
 
-    // const firestore = getFirestore();
-    // firestore
-    //   .collection("RepoSearchHistory")
-    //   .add({})
-    //   .then(() => {
-    // dispatch({ type: "SAVE_HISTORY", history });
-    //   })
-    //   .catch(err => {
-    //     dispatch({ type: "SAVE_HISTORY_ERROR", err });
-    //   });
+    dispatch({ type: "RESTART_STATUS", originStatus });
   };
 };

@@ -4,9 +4,19 @@ const initState = {
 
 const reducer = (state = initState, action) => {
   switch (action.type) {
-    case "SAVE_HISTORY":
+    case "UPDATE_STATUS": {
+      console.log("change status");
+      return {
+        ...state,
+        squares: action.Squares
+      };
+    }
+    case "RESTART_STATUS":
       console.log("save history");
-      return state;
+      return {
+        ...state,
+        squares: Array(9).fill(null)
+      };
     default:
       return state;
   }
